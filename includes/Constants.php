@@ -6,9 +6,8 @@ define('ADMINEMAIL','galaxywebstech@gmail.com');
 define('SERVEREMAIL','info@cloudgalaxytech.com');
 define('EMAILHOST','mail.cloudgalaxytech.com');
 
-define('ADMIN1PHONE','0721544830');
-define('ADMIN2PHONE','254716815356');
-define('ADMIN3PHONE','0716915222');
+define('ADMIN_PHONE','0700178231');
+
 define('SMS_SENDER_ID','TextSMS');
 define('SMSAPIKEY','119323ba4448f39ef6955e9c144ef496');
 

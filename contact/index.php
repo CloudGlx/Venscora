@@ -1,4 +1,5 @@
 <?php
+if(isset($_GET['success'])){
 $successParam = $_GET['success'];
 
 if ($successParam === 'true') {
@@ -6,7 +7,7 @@ if ($successParam === 'true') {
 }elseif($successParam === 'false'){
     echo '<script>alert("Error Ocurred!! Try again later");</script>';
 }
-
+}
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     require_once('../includes/smsFunction.php');
 
@@ -17,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Other form fields...
 
     // Send SMS to admin
-    $adminPhoneNumber = "0715878800"; // Replace with actual admin phone number
+    $adminPhoneNumber = ADMIN_PHONE; // Replace with actual admin phone number
     $smsBody = Sms_Body($name, $email, $subject, $message);
 
 
